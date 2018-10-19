@@ -1,4 +1,4 @@
-# The Buildbox Web Style Guide
+# The Buildbox JavaScript Style Guide
 
 Welcome to the Buildbox!
 
@@ -12,7 +12,13 @@ Now as a developer that will be responsible to make other people's dream come tr
 
 **1.2** Install Extensions on VSCode - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint),  [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 
-**1.3** VSCode Default Config
+**1.3** Install Extensions Packages Globally
+```
+npm install -g tslint
+npm install -g eslint
+```
+
+**1.4** VSCode Default Config
 ```
 "editor.tabSize": 4,
 "editor.detectIndentation": false,
@@ -22,7 +28,6 @@ Now as a developer that will be responsible to make other people's dream come tr
 "editor.tabCompletion": "on",
 "eslint.enable": true,
 "files.eol": "\r\n",
-"terminal.integrated.fontSize": 14,
 "editor.formatOnSave": true,
 "prettier.semi": false,
 "prettier.printWidth": 120,
@@ -34,7 +39,7 @@ Now as a developer that will be responsible to make other people's dream come tr
 "prettier.tslintIntegration": true
  ```
  
-**1.4** Optional Font with Ligatures [Fira Code](https://github.com/tonsky/FiraCode)
+**1.5** Optional Font with Ligatures [Fira Code](https://github.com/tonsky/FiraCode)
  ```
 "editor.fontSize": 16,
 "editor.lineHeight": 24,
@@ -45,7 +50,7 @@ Now as a developer that will be responsible to make other people's dream come tr
 
 ## 2 - Guidelines
 
-**2.1.1** Do not use Semicolon :x:
+**2.1.1** Do not use Semicolon unless necessary... :x:
 
 **2.1.2** Do not use Double Quotes :x:
 
@@ -53,15 +58,14 @@ Now as a developer that will be responsible to make other people's dream come tr
 
 **2.1.4** Prefer ```const``` over ```let``` :heavy_check_mark:
 
-**2.1.5** When on a concatenation situation prefer the use of [Template Literal](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings)
+**2.1.5** When on a concatenation situation prefer the use of [Template Literal](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings) :relieved:
 
-*bad* :sweat:
+
 ```
+// bad
 var bad = 'Some text' + anything 
-```
 
-*good* :heart_eyes:
-```
+// good
 const bad = `Some text ${anything}`
 ```
 
@@ -72,8 +76,8 @@ const oneThing = 'Whats up?'
 
 **2.1.7** Avoid ```else``` :bangbang:
 
-*bad* :sweat:
 ```
+// bad
 if (smart) {
   return true
 } else if (almost) {
@@ -81,8 +85,8 @@ if (smart) {
 } else {
   return false
 } 
-```
-```
+
+// bad
 if (smart) {
   if (almost) {
     return true
@@ -92,17 +96,16 @@ if (smart) {
 } else {
   return false
 } 
-```
 
-*good* :heart_eyes:
-```
+
+// good
 if (smart || almost) {
  return true
 }
 
 return false
-```
-```
+
+// good
 if (smart && almost) {
  return true
 }
