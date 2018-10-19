@@ -19,32 +19,32 @@ npm install -g eslint
 ```
 
 **1.4** VSCode Default Config
-```
-"editor.tabSize": 4,
-"editor.detectIndentation": false,
-"editor.insertSpaces": false,
-"editor.renderWhitespace": "all",
-"editor.renderControlCharacters": true,
-"editor.tabCompletion": "on",
-"eslint.enable": true,
-"files.eol": "\r\n",
-"editor.formatOnSave": true,
-"prettier.semi": false,
-"prettier.printWidth": 120,
-"prettier.useTabs": true,
-"prettier.tabWidth": 4,
-"prettier.singleQuote": true,
-"prettier.jsxBracketSameLine": true,
-"prettier.eslintIntegration": true,
-"prettier.tslintIntegration": true
+ ```
+ "files.eol": "\n",
+ "editor.insertSpaces": false,
+ "editor.renderWhitespace": "all",
+ "editor.detectIndentation": false,
+ "editor.tabSize": 4,
+ "editor.renderControlCharacters": true,
+ "editor.tabCompletion": "on",
+ "editor.formatOnSave": true,
+ "eslint.enable": true,
+ "prettier.semi": false,
+ "prettier.printWidth": 120,
+ "prettier.useTabs": true,
+ "prettier.tabWidth": 4,
+ "prettier.singleQuote": true,
+ "prettier.jsxBracketSameLine": true,
+ "prettier.eslintIntegration": true,
+ "prettier.tslintIntegration": true
  ```
  
 **1.5** Optional Font with Ligatures [Fira Code](https://github.com/tonsky/FiraCode)
  ```
-"editor.fontSize": 16,
-"editor.lineHeight": 24,
 "terminal.integrated.fontSize": 14,
 "editor.fontFamily": "Fira Code",
+"editor.fontSize": 16,
+"editor.lineHeight": 24,
 "editor.fontLigatures": true,
 ```
 
