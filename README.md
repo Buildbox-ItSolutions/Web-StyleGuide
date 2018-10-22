@@ -52,7 +52,7 @@ npm install -g eslint
 
 **2.1.1** Do not use Semicolon unless necessary... :x:
 
-**2.1.2** Do not use Double Quotes :x:
+**2.1.2** Use Single Quotes :heavy_check_mark:
 
 **2.1.3** Do not use ```var``` :x:
 
@@ -112,3 +112,27 @@ if (smart && almost) {
 
 return false
 ```
+
+**2.1.8** Do not use await in loop :boom:
+
+```
+// bad
+const something = async things => {
+	const results = []
+	// Bad: each loop iteration is delayed until the entire asynchronous operation completes
+	for (const thing of things) results.push(await thing)
+
+	return results
+}
+
+// good
+const something = async things => {
+	const results = []
+	// Good: all asynchronous operations are immediately started.
+	for (const thing of things) results.push(thing)
+
+	// Now that all the asynchronous operations are running, here we wait until they all complete.
+	return await Promise.all(results)
+}
+```
+
