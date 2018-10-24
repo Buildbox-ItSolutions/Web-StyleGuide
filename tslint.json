@@ -11,7 +11,7 @@
 		],
 		"no-console": [true],
 		"cyclomatic-complexity": [true, 20],
-		"curly": [true, "as-needed"],
+		"curly": [true, "ignore-same-line"],
 		"deprecation": {
 			"severity": "warn"
 		},
