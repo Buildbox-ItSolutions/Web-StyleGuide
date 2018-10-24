@@ -1,6 +1,14 @@
 {
+	"rulesDirectory": "node_modules/codelyzer",
 	"extends": ["tslint:recommended"],
 	"rules": {
+		"ordered-imports": [
+			true,
+			{
+				"import-sources-order": "any",
+				"named-imports-order": "lowercase-last"
+			}
+		],
 		"no-console": [true],
 		"cyclomatic-complexity": [true, 20],
 		"curly": [true, "as-needed"],
@@ -12,7 +20,15 @@
 		"triple-equals": true,
 		"no-var-keyword": true,
 		"prefer-const": [true, { "destructuring": "all" }],
-		"variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+		"variable-name": [
+			true,
+			"check-format",
+			"allow-leading-underscore",
+			"allow-trailing-underscore",
+			"allow-pascal-case",
+			"allow-snake-case",
+			"ban-keywords"
+		],
 		"trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
 		"no-consecutive-blank-lines": [true, 2],
 		"only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
@@ -72,7 +88,7 @@
 		"no-construct": true,
 		"no-debugger": true,
 		"no-empty-interface": true,
-		"no-inferrable-types": [true, "ignore-params"],
+		"no-inferrable-types": [false],
 		"no-misused-new": true,
 		"no-non-null-assertion": true,
 		"no-string-literal": true,
@@ -80,6 +96,7 @@
 		"no-switch-case-fall-through": true,
 		"no-trailing-whitespace": true,
 		"no-unused-expression": true,
+		"no-unused-variable": true,
 		"no-use-before-declare": true,
 		"object-literal-sort-keys": false,
 		"one-line": [true, "check-open-brace", "check-catch", "check-else", "check-whitespace"],
@@ -93,6 +110,18 @@
 				"property-declaration": "nospace",
 				"variable-declaration": "nospace"
 			}
+		],
+		"typedef": [
+			true,
+			"call-signature",
+			"arrow-call-signature",
+			"parameter",
+			"arrow-parameter",
+			"property-declaration",
+			"variable-declaration",
+			"member-variable-declaration",
+			"object-destructuring",
+			"array-destructuring"
 		],
 		"unified-signatures": true,
 		"no-output-on-prefix": true,
