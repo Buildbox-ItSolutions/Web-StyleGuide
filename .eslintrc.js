@@ -16,7 +16,7 @@ module.exports = {
 		es6: true
 	},
 	rules: {
-		'max-len': ['warn', { code: 120 }],
+		'max-len': ['warn', { code: 120, "tabWidth": 4, "ignoreUrls": true, "ignoreStrings": true }],
 		'no-console': ['warn'],
 		indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
