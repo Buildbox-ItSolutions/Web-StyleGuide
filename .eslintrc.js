@@ -16,7 +16,7 @@ module.exports = {
 		es6: true
 	},
 	rules: {
-		'max-len': ['warn', { code: 120, "tabWidth": 4, "ignoreUrls": true, "ignoreStrings": true }],
+		'max-len': ['warn', { code: 120, tabWidth: 4, ignoreUrls: true, ignoreStrings: true }],
 		'no-console': ['warn'],
 		indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
@@ -24,7 +24,7 @@ module.exports = {
 		semi: ['error', 'never'],
 		'max-depth': ['error', 3],
 		complexity: ['error', 20],
-		curly: ['error', 'multi'],
+		curly: ['error', 'multi-line', 'consistent'],
 		'no-async-promise-executor': 'error',
 		'no-await-in-loop': 'error',
 		'no-template-curly-in-string': 'error',
