@@ -2,13 +2,7 @@
 	"rulesDirectory": "node_modules/codelyzer",
 	"extends": ["tslint:recommended"],
 	"rules": {
-		"ordered-imports": [
-			true,
-			{
-				"import-sources-order": "any",
-				"named-imports-order": "lowercase-last"
-			}
-		],
+		"ordered-imports": false,
 		"no-console": [true],
 		"cyclomatic-complexity": [true, 20],
 		"curly": [true, "ignore-same-line"],
