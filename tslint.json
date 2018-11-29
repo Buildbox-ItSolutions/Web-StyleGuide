@@ -2,6 +2,7 @@
 	"rulesDirectory": "node_modules/codelyzer",
 	"extends": ["tslint:recommended"],
 	"rules": {
+		"no-var-requires": false,
 		"ordered-imports": false,
 		"no-console": [true],
 		"cyclomatic-complexity": [true, 20],
