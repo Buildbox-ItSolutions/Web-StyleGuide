@@ -8,6 +8,13 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/recommended',
 	],
+	env: {
+		browser: true,
+		commonjs: true,
+		node: true,
+		mongo: true,
+		es6: true,
+	},
 	plugins: ['@typescript-eslint', 'react'],
 	parserOptions: {
 		ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
