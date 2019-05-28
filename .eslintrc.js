@@ -98,7 +98,7 @@ module.exports = {
 		'max-depth': ['error', 3],
 		complexity: ['warn', 20],
 		curly: ['error', 'multi-line', 'consistent'],
-		'no-async-promise-executor': 'error',
+		'no-async-promise-executor': 'warn',
 		'no-await-in-loop': 'error',
 		'no-template-curly-in-string': 'error',
 		'no-eval': 'error',
