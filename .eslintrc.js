@@ -48,7 +48,8 @@ module.exports = {
 		],
 	},
 	rules: {
-		// 'prettier/prettier': 'error',
+		// REACT
+		'react/prop-types': ['off'],
 
 		// TSLint
 		'@typescript-eslint/array-type': ['error', 'generic'],
