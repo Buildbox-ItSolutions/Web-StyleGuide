@@ -54,9 +54,10 @@ module.exports = {
 		// TSLint
 		'@typescript-eslint/array-type': ['error', 'generic'],
 		'@typescript-eslint/class-name-casing': 'error',
-		'@typescript-eslint/indent': ['error', 'tab'],
+		'@typescript-eslint/indent': ['off'],
 		'@typescript-eslint/interface-name-prefix': ['error', 'always'],
 		'@typescript-eslint/member-delimiter-style': 'off',
+		'@typescript-eslint/no-use-before-define': 'warn',
 		'@typescript-eslint/no-empty-interface': [
 			'error',
 			{
@@ -100,7 +101,7 @@ module.exports = {
 		complexity: ['warn', 20],
 		curly: ['error', 'multi-line', 'consistent'],
 		'no-async-promise-executor': 'warn',
-		'no-await-in-loop': 'error',
+		'no-await-in-loop': 'warn',
 		'no-template-curly-in-string': 'error',
 		'no-eval': 'error',
 		'no-script-url': 'error',
