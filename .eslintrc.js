@@ -58,6 +58,7 @@ module.exports = {
 			{
 				allowExpressions: true
 			}
-		]
+		],
+		'@typescript-eslint/indent': ['error', 'tab']
 	}
 }
