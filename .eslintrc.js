@@ -59,6 +59,8 @@ module.exports = {
 				allowExpressions: true
 			}
 		],
-		'@typescript-eslint/indent': ['error', 'tab']
+		'@typescript-eslint/indent': ['error', 'tab'],
+		'@typescript-eslint/array-type': ['error', 'generic'],
+		'@typescript-eslint/no-use-before-define': 'off'
 	}
 }
