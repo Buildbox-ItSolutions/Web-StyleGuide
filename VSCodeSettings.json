@@ -1,38 +1,21 @@
 {
-	"files.eol": "\n",
-	"editor.insertSpaces": false,
-	"editor.renderWhitespace": "all",
-	"editor.detectIndentation": false,
-	"editor.tabSize": 4,
-	"editor.renderControlCharacters": true,
-	"editor.tabCompletion": "on",
-	"editor.formatOnSave": true,
-	"eslint.enable": true,
-	"prettier.eslintIntegration": true,
-	"prettier.tslintIntegration": false,
-	"prettier.semi": false,
-	"prettier.printWidth": 80,
-	"prettier.useTabs": true,
-	"prettier.tabWidth": 4,
-	"prettier.singleQuote": true,
-	"prettier.trailingComma": "all",
-	"prettier.jsxBracketSameLine": true,
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
 		"typescript",
 		"typescriptreact"
 	],
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"prettier.printWidth": 80,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.trailingComma": "none",
+	"prettier.bracketSpacing": true,
+	"prettier.jsxBracketSameLine": false,
+	"prettier.endOfLine": "lf",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false
 }
