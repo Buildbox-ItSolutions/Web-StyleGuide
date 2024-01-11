@@ -1,0 +1,24 @@
+{
+	"extends": "@rocketseat/eslint-config/react",
+	"plugins": ["unused-imports"],
+	"rules": {
+		"no-use-before-define": "off",
+		"unused-imports/no-unused-imports-ts": 1,
+		"prettier/prettier": [
+			"error",
+			{
+				"bracketSpacing": true,
+				"endOfLine": "lf",
+				"insertPragma": false,
+				"jsxSingleQuote": true,
+				"jsxBracketSameLine": false,
+				"printWidth": 80,
+				"proseWrap": "preserve",
+				"semi": false,
+				"singleQuote": true,
+				"trailingComma": "all",
+				"useTabs": true
+			}
+		]
+	}
+}
